@@ -1,0 +1,49 @@
+.img-fondo{
+   background-image: url("../img/clima-fondo.jpg");
+   background-size: cover;
+   background-repeat: no-repeat fixed;
+    }
+
+
+.header{
+    margin-top:55px;
+    height: auto;
+}
+
+/* body{
+    height:100vh;
+} */
+.header h1{
+    padding-top:50px;
+    margin-left: 20px;
+    font-weight:100;
+}
+
+.div h2{
+    font-size: 1.5rem;
+}
+div p{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    font-size: 2rem;
+}
+
+.iconos{
+    margin-bottom:110px
+}
+.h2, h2 {
+    font-size: calc(1.325rem + .7vw);
+}
+
+
+@media only screen and (max-width: 500px)
+{
+
+/* .iconos{
+    margin-left: 50px;
+} */
+
+
+
+}
