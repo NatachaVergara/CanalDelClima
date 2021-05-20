@@ -7,7 +7,7 @@ let temperatura = document.querySelector(".temp");
 let humedad = document.querySelector(".humedad");
 let sensacionTermica = document.querySelector(".sTermica");
 let cielo = document.querySelector(".cClimatica");
-let iconosVer = document.querySelector(".iconos");
+let iconosVer = document.querySelector(".scroll");
 
 
 
@@ -33,7 +33,7 @@ function peticionClima() {
             cielo.innerText= ` ${respuesta.weather[0].description}`
             
         })
-        iconosVer.scrollIntoView();
+        iconosVer.scrollIntoView({inline: "center", behavior: "smooth"});
 
 
 }
