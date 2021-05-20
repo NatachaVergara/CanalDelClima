@@ -24,7 +24,7 @@ function peticionClima() {
 
     if (ciudadInput === "")
         {
-            alert("Por favor, ingrese primero el nombre de la ciudad y luego el nombre de la la provincia")
+            alert("Por favor, ingrese primero el nombre de la ciudad y luego el nombre de la provincia")
         }   
        else    
         {
@@ -45,6 +45,7 @@ function peticionClima() {
             cielo.innerText= ` ${respuesta.weather[0].description}`
             
         })
+
         iconosVer.scrollIntoView({inline: "center", behavior: "smooth"});
     }
 
