@@ -36,6 +36,13 @@ div p{
     font-size: calc(1.325rem + .7vw);
 }
 
+.mensajeError{
+    width: 50vh;
+    margin: auto;
+    font-size: 1.5rem;
+    color: red;
+}
+
 
 @media only screen and (max-width: 500px)
 {

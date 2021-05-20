@@ -19,7 +19,19 @@ btn.addEventListener("click", peticionClima)
 
 
 function peticionClima() {
-    let ciudadInput = document.querySelector(".ciudad").value;
+    //Si un usuario deja el input vacio
+    let ciudadInput = (document.querySelector(".ciudad").value);
+
+    if (ciudadInput === "")
+        {
+            alert("Por favor, ingrese primero el nombre de la ciudad y luego el nombre de la la provincia")
+        }   
+       else    
+        {
+
+        
+
+    
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudadInput},AR&lang=sp&&units=metric&appid=7ef39c539326f2f7490c5ecc19ba80c5`)
         .then(respuesta => respuesta.json())
         .then(respuesta => { 
@@ -34,12 +46,15 @@ function peticionClima() {
             
         })
         iconosVer.scrollIntoView({inline: "center", behavior: "smooth"});
-
+    }
 
 }
 // peticionClima();
 
+// let mensajeError = document.querySelector(".img-fondo");
+// let quitarMensaje = document.querySelector(".mensajeError");
 
+//         mensajeError.toggle(quitarMensaje)
 
 
 
