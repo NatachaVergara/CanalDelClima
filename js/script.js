@@ -1,6 +1,6 @@
 /*Creamos una funcion para conectar con el html*/
 console.log("Estoy linkeado")
-let btn = document.querySelector(".btn");
+let btn = document.querySelector(".btnCargar");
 
 let ciudad = document.querySelectorAll("h1")[0];
 let temperatura = document.querySelector(".temp");
@@ -21,41 +21,34 @@ btn.addEventListener("click", peticionClima)
 function peticionClima() {
     //Si un usuario deja el input vacio
     let ciudadInput = (document.querySelector(".ciudad").value);
-
-    if (ciudadInput === "")
-        {
-            alert("Por favor, ingrese primero el nombre de la ciudad y luego el nombre de la provincia")
-        }   
-       else    
-        {
-
-        
-
+    btn.innerHTML = "Volver a buscar";
     
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudadInput},AR&lang=sp&&units=metric&appid=7ef39c539326f2f7490c5ecc19ba80c5`)
-        .then(respuesta => respuesta.json())
-        .then(respuesta => { 
-            
 
-            console.log(ciudadInput)
-            // ciudad.innerText += `${respuesta.name}`
-            temperatura.innerText=` ${respuesta.main.temp}°`;
-            humedad.innerText=` ${respuesta.main.humidity}%`;
-            sensacionTermica.innerText=` ${respuesta.main.feels_like}°`;
-            cielo.innerText= ` ${respuesta.weather[0].description}`
-            
-        })
+    if (ciudadInput === "") {
+        alert("Por favor, ingrese primero el nombre de la ciudad y luego el nombre de la provincia")
+    }
+    
+    else {
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudadInput},AR&lang=sp&&units=metric&appid=7ef39c539326f2f7490c5ecc19ba80c5`)
+            .then(respuesta => respuesta.json())
+            .then(respuesta => {
 
-        iconosVer.scrollIntoView({inline: "center", behavior: "smooth"});
+
+                console.log(ciudadInput)
+                // ciudad.innerText += `${respuesta.name}`
+                temperatura.innerText = ` ${respuesta.main.temp}°`;
+                humedad.innerText = ` ${respuesta.main.humidity}%`;
+                sensacionTermica.innerText = ` ${respuesta.main.feels_like}°`;
+                cielo.innerText = ` ${respuesta.weather[0].description}`
+                
+
+            })
+            .catch(err => console.log(err))
+           
+        iconosVer.scrollIntoView({ inline: "center", behavior: "smooth" });
     }
 
 }
-// peticionClima();
-
-// let mensajeError = document.querySelector(".img-fondo");
-// let quitarMensaje = document.querySelector(".mensajeError");
-
-//         mensajeError.toggle(quitarMensaje)
 
 
 
