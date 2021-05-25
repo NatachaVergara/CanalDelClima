@@ -16,7 +16,7 @@
 .header h1{
     padding-top:50px;
     margin-left: 20px;
-    font-weight:100;
+    /* font-weight:100; */
 }
 
 .div h2{
@@ -48,6 +48,9 @@ div p{
 {
 .cartas{
     margin-left: 20px;
+
+     
+    
 }
 div img{
     width:40px;

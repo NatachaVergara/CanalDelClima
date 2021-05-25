@@ -8,6 +8,7 @@ let humedad = document.querySelector(".humedad");
 let sensacionTermica = document.querySelector(".sTermica");
 let cielo = document.querySelector(".cClimatica");
 let iconosVer = document.querySelector(".scroll");
+let icono = document.querySelector(".icono");
 
 
 
@@ -40,6 +41,10 @@ function peticionClima() {
                 humedad.innerText = ` ${respuesta.main.humidity}%`;
                 sensacionTermica.innerText = ` ${respuesta.main.feels_like}°`;
                 cielo.innerText = ` ${respuesta.weather[0].description}`
+                document.getElementById("icon").src = `http://openweathermap.org/img/w/${respuesta.weather[0].icon}.png`;
+
+
+                
                 
 
             })

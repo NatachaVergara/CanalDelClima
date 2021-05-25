@@ -30,15 +30,16 @@
 
         <div class=" img-fondo">
 
-            <h1 class="h3 mb-3 fw-normal">Ingrese el nombre de la ciudad </h1>
+            <h1 class="h3 mb-3 font-weight-bold text-center ">Ingrese el nombre de la ciudad </h1>
+           
+                <div class="col-4 col-lg-2 mt-5 ">
+                    <input type="text" id="ciudad" data-bs-toggle="tooltip" title="Ej: María Grande, Entre Ríos"
+                        placeholder="Ej: Ciudad, Provincia" class="ms-5 ciudad ">
+           <br><br>
+        </div>
 
-            <div class="col-4 col-lg-2 mt-5 ">
-                <input type="text" id="ciudad" placeholder="Ej: Ciudad, Provincia" class="ms-5 ciudad"> <br><br>
-
-
-            </div>
-            <button class="w-20 btnCargar btn btn-lg btn-danger col-lg-2 ms-5 mb-5" type="submit">Cargar datos del
-                tiempo</button>
+        <button class=" btnCargar btn btn-lg btn-danger  ms-5 mb-5" type="submit" >Cargar datos del
+            tiempo</button>
 
 
         </div>
@@ -50,7 +51,7 @@
         <div class="container marketing me-5 ps-5 iconos">
             <section class="scroll"></section>
             <!-- Three columns of text below the carousel -->
-            <div class="row cartas mt-5">
+            <div class="row cartas ">
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 mt-5 me-5 d-flex flex-column">
 
                     <img src="./img/low-temperature.png" alt="" class="bd-placeholder-img rounded-circle" width="140"
@@ -81,13 +82,23 @@
 
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 mt-5 me-5">
 
-                    <img src="./img/condicion_climatica.png" alt="" class="bd-placeholder-img rounded-circle"
-                        width="140" height="140">
+                    <img alt="" class="bd-placeholder-img rounded-circle icono"
+                    id="icon"  width="140" height="140">
 
                     <h2>Condición climática</h2>
                     <p width="140" class="cClimatica"></p>
 
                 </div><!-- /.col-lg-4 -->
+
+               
+
+                <!-- <img  class="icono" alt=""  width="100" height="100"> -->
+                                      
+                    
+
+              
+                
+
             </div><!-- /.row -->
 
 
@@ -134,12 +145,15 @@
 
 
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
+
     <script src="./js/script.js"></script>
 </body>
 
