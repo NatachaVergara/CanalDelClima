@@ -17,6 +17,10 @@
         <nav class="navbar navbar-expand-md navbar-danger fixed-top bg-dark">
             <div class="container">
                 <a class="navbar-brand " href="#">Canal del Clima</a>
+                <ul>
+                    <li class="text-muted"><a href="https://proyectosdejs.netlify.app" target="_blank"> Proyectos de
+                            JS</a></li>
+                </ul>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,30 +30,32 @@
     </header>
 
 
-    <main class="header">
+    <main class="banner">
 
         <div class=" img-fondo">
 
             <h1 class="h3 mb-3 font-weight-bold text-center ">Ingrese el nombre de la ciudad </h1>
-           
-                <div class="col-4 col-lg-2 mt-5 ">
-                    <input type="text" id="ciudad" data-bs-toggle="tooltip" title="Ej: María Grande, Entre Ríos"
-                        placeholder="Ej: Ciudad, Provincia" class="ms-5 ciudad ">
-           <br><br>
+
+            <div class="col-4 col-lg-2 mt-5 ">
+                <input type="text" id="ciudad" data-bs-toggle="tooltip" title="Ej: María Grande, Entre Ríos"
+                    placeholder="Ej: Ciudad, Provincia" class="ms-5 ciudad ">
+                <br><br>
+            </div>
+
+            <button class=" btnCargar btn btn-lg btn-danger  ms-5 mb-5" type="submit">Cargar datos del
+                tiempo</button>
+
+
         </div>
 
-        <button class=" btnCargar btn btn-lg btn-danger  ms-5 mb-5" type="submit" >Cargar datos del
-            tiempo</button>
 
-
+        <div class="container">
+            <h1 class="ciudad">Se encontró: </h1>
         </div>
-
-
-
 
 
         <div class="container marketing me-5 ps-5 iconos">
-            <section class="scroll"></section>
+            
             <!-- Three columns of text below the carousel -->
             <div class="row cartas ">
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 mt-5 me-5 d-flex flex-column">
@@ -80,25 +86,15 @@
 
                 </div><!-- /.col-lg-4 -->
 
+
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 mt-5 me-5">
-
-                    <img alt="" class="bd-placeholder-img rounded-circle icono"
-                    id="icon"  width="140" height="140">
-
+                    <img src="./img/condicion_climatica.png" alt="" class="bd-placeholder-img rounded-circle"
+                        width="140" height="140">
                     <h2>Condición climática</h2>
                     <p width="140" class="cClimatica"></p>
 
+
                 </div><!-- /.col-lg-4 -->
-
-               
-
-                <!-- <img  class="icono" alt=""  width="100" height="100"> -->
-                                      
-                    
-
-              
-                
-
             </div><!-- /.row -->
 
 
@@ -135,7 +131,7 @@
 
     <footer class="footer mt-auto py-3 bg-dark">
         <div class="container">
-            <span class="text-muted">Primer Hackathon 2021</span>
+            <span class="text-muted">Primer Hackathon 2021. Natacha Vergara en Programa desde tu casa</span>
         </div>
     </footer>
 

@@ -4,8 +4,24 @@
    background-repeat: no-repeat fixed;
     }
 
+header ul li{
+list-style: none;
+position:absolute;
+top: 20px;
+right: 30px;
 
-.header{
+}
+
+header a{
+    text-decoration:none;
+    color: aliceblue;
+}    
+
+a:visited{
+color: none;
+}
+
+.banner{
     margin-top:55px;
     height: auto;
 }
@@ -13,11 +29,12 @@
 /* body{
     height:100vh;
 } */
-.header h1{
+.banner h1{
     padding-top:50px;
     margin-left: 20px;
     /* font-weight:100; */
 }
+
 
 .div h2{
     font-size: 1.5rem;
@@ -47,9 +64,7 @@ div p{
 @media only screen and (max-width: 500px)
 {
 .cartas{
-    margin-left: 20px;
-
-     
+    margin-left: 20px;    
     
 }
 div img{
@@ -59,7 +74,9 @@ div img{
 div p, h2{
     font-size: 1rem;
 }
-
+.iconos{
+    margin-bottom:0px
+}
 
 
 }
